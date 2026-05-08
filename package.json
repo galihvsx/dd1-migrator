@@ -1,0 +1,30 @@
+{
+  "name": "dd1-migrator",
+  "version": "0.0.1",
+  "description": "Interactive CLI to execute Drizzle SQL migrations on Cloudflare D1",
+  "type": "module",
+  "bin": {
+    "dd1-migrator": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cloudflare",
+    "d1",
+    "drizzle",
+    "migration",
+    "wrangler",
+    "cli"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.0"
+  }
+}
