@@ -9,9 +9,13 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/galihvsx/dd1-migrator.git"
+  },
   "scripts": {
     "build": "tsup",
-    "prepublishOnly": "npm run build"
+    "prepare": "tsup"
   },
   "keywords": [
     "cloudflare",
